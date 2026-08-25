@@ -3,7 +3,7 @@ I edited this file "`/etc/snort/rules/local.rules`" in my Kali virtual machine a
 `alert icmp $EXTERNAL_NET any -> $HOME_NET 80 (msg:"[ALERT] ICMP PING ATTACK DETECTED"; itype:8; detection_filter: track by_src, count 20, seconds 1; sid:1000002; rev:1)`
 
 ## 2. The Attack Command:
-https://hackmd.io/_uploads/H1AOq-iDzl.png
+![Attack_command](https://hackmd.io/_uploads/H1AOq-iDzl.png)
 
 ## 3. IDS Detection: A screenshort showing snort successfully triggering the ICMP alert
 https://hackmd.io/_uploads/BJPJjWivze.png
